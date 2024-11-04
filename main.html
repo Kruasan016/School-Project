@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Naprawa Iphone'ów</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="img/Apple_logo.png" type="image/x-icon">
+    </head>
+    <body>
+        <div id="home"></div>
+        <nav>
+            <div class="navbar">
+                <ul class="main-menu">
+                    <a href="#"><li class="nav_logo"><img src="img/Apple_logo.png" class="nav_logo_img" alt="Logo"></li></a>
+                    <li class="logo_text"><p>Naprawa Iphone'ów</p></li>
+                    <li class="main-menu-btn"><a href="#home">Home</a></li>
+                    <li class="main-menu-btn"><a href="#services">Services</a></li>
+                    <li class="main-menu-btn"><a href="#wiecej">Więcej</a></li>
+                    <a href="register.php">Zarejestruj się </a>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="intro">
+                <h1 class="margin_text animate__animated animate__backInDown">Najbardziej zalecane<br>serwis Apple<br>w Polsce!</h1>
+                <img src="img/iphones.png" class="iphones_img" alt="iphones">
+            </div>
+            <div class="block2">
+                <h1 class="wow pulse">Dlaczego my?</h1>
+                <ul>
+                    <li class="block2_list">Zapewniamy 100% gwarancję na naprawę awarii</li>
+                    <li class="block2_list">Wykonamy pracę ponownie, jeśli ci się nie spodoba</li>
+                    <li class="block2_list">Płatność dopiero po dokonaniu naprawy</li>
+                    <li class="block2_list">Podczas oczekiwania na zamówienie otrzymasz filiżankę kawy </li>
+                </ul>
+            </div>
+            <div id="services" class="block3 ui-container">
+                <h1 id="result" class="text_typing"></h1>
+            </div>
+            <div class="sim-slider">
+                <ul class="sim-slider-list">
+                  <li><img src="http://pvbk.spb.ru/inc/slider/imgs/no-image.gif" alt="screen"></li> <!-- это экран -->
+                  <li class="sim-slider-element"><img src="img/airpods.jpg" alt="airpods"></li>
+                  <li class="sim-slider-element"><img src="img/appleWatch.jpg" alt="appleWatch"></li>
+                  <li class="sim-slider-element"><img src="img/iphone.jpg" alt="iphone"></li>
+                  <li class="sim-slider-element"><img src="img/macbook.jpg" alt="macBook"></li>
+                </ul>
+                <div class="sim-slider-arrow-left"></div>
+                <div class="sim-slider-arrow-right"></div>
+                <div class="sim-slider-dots"></div>
+            </div>
+            <div id="wiecej" class="block4">
+                <div class="block4_content">
+                    <h1 class="block4_text">Chcesz dowiedzieć się więcej?</h1>
+                    <p class="content_p">Jeśli chcesz dowiedzieć się więcej o którejkolwiek z usług lub zamówić usługę, możesz bezpiecznie kliknąć ten przycisk, zostawić zapytanie, a menedżerowie wkrótce się z Tobą skontaktują.</p>
+                </div>
+                <div class="block4_btn">
+                    <button id="openModal" class="button-27 section__button" role="button">Więcej</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal__main">
+                <div class="modal__container">
+                    <form id="feedbackForm">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" maxlength="30" required>
+                      
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" maxlength="50" required>
+                      
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" maxlength="250" required></textarea>
+                      
+                        <button type="submit" class="btnDone">Отправить</button>
+                    </form>
+                </div>
+                <button class="modal__close">&#10006;</button>
+            </div> 
+        </div>
+        <script src="js/popup.js"></script>
+        <script src="js/carousel.js"></script>
+        <script src="js/textTyping.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+    </body>
+</html>
